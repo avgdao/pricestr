@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Pricestr</title>
+    <link rel='stylesheet' href='style.css'>
+    <link rel="shortcut icon" href="favicon.png">
+  </head>
+  <body>
+    <div class="main">
+      <div class="title-box">
+        <h1 class="title">
+          <span class="title-nostr">Pricestr</span>
+        </h1>
+      </div>
+      <div class="info">
+        <div class="info-column">
+          <p class="info-heading">
+            Publish Pricing Information
+          </p>
+          <p class="info-text">
+            Write a post with the hashtag <a href="https://nostr.band/?q=%23pricestr"><span class="mono">#pricestr</span></a> using your regular Nostr client and your pricing data point will display here. Pricestr will eventually evolve into a <a href="http://archive.today/iOX4i"><span class="mono">decentralized inflation dashboard</span></a>.
+          </p>
+        </div>
+        <div class="info-column">
+          <p class="info-heading">
+            Search pricing data points
+          </p>
+          <p class="info-text">
+            Use the search and click on messages containing pricing information.
+          </p>
+          <p class="info-text">
+            Pricestr does not verify data points at the moment. Contact the informant to inquire about pricing information submitted.
+          </p>
+        </div>
+      </div>
+      <div id="listings_title">
+        <form id="search" method="post" action="#" onsubmit="filter_listings()">
+          <input id="search_term" type="text" name="search_term" placeholder="Search pricing data points...">
+          <button id="search_button" type="submit"><img src="search.png" alt="Search" id="search_icon"></button>
+        </form>
+        <h2 class="info-heading">
+          Browse listings
+        </h2>
+      </div>
+      <div id="listings_body">
+        <p class="loading">
+          <span class="loading-text">Loading...</span>
+        </p>
+      </div>
+      <div id="credits">
+        <p>Made by AVG. Message me at <a href="https://stacker.news/avg"><span class="mono">npub1uhqal6z002p7wcrdm3hqaqsfxpx0skfsflf457whrh4465tnqyxq3tvzmw</span></a></p>
+        <p>Based upon <a href="https://codeberg.org/Anarkio/nostrmarket/"><span class="mono">Nostrmarket</span></a> by Anarkio</p>
+      </div>
+    </div>
+    <script src='jquery.min.js'></script>
+    <script src='feeds_api.js'></script>
+    <script src='xml2json.js'></script>
+    <script src='bech32-buffer.min.js'></script>
+  </body>
+</html>
