@@ -10,6 +10,7 @@ apt-get install -y \
   vim \
   build-essential \
   pkg-config \
+  libssl-dev \
   openssl
 
 ## Install rustup and common components
@@ -19,6 +20,7 @@ rustup component add rustfmt
 rustup component add rustfmt --toolchain nightly
 rustup component add clippy 
 rustup component add clippy --toolchain nightly
+rustup target add wasm32-unknown-unknown
 
 cargo install cargo-expand
 cargo install cargo-edit
