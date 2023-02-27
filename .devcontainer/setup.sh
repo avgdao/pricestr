@@ -9,6 +9,7 @@ apt-get install -y \
   zsh \
   vim \
   build-essential \
+  pkg-config \
   openssl
 
 ## Install rustup and common components
@@ -21,6 +22,7 @@ rustup component add clippy --toolchain nightly
 
 cargo install cargo-expand
 cargo install cargo-edit
+cargo install dioxus-cli
 
 ## setup and install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

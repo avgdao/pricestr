@@ -1,6 +1,4 @@
-# Nostr Market
-
-![Thumbnail](https://i.ibb.co/t4w8gwz/thumb.jpg)
+# Pricestr
 
 Simple webpage that fetches and displays Nostr posts with the hashtag #nostrmarket.
 
@@ -101,7 +99,7 @@ Besides Rust and Cargo, the image comes with the following Rust related tooling:
 
 ### Operating System
 
-- [Ubuntu 18.04](https://releases.ubuntu.com/18.04.4/): The 18.04 LTS version of Ubuntu.
+- [Ubuntu 22.04](https://releases.ubuntu.com/22.04/): The 22.04 LTS version of Ubuntu.
 
 ## Usage
 
