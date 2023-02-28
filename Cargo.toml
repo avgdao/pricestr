@@ -15,3 +15,7 @@ log = "0.4.6"
 # WebAssembly Debug
 wasm-logger = "0.2.0"
 console_error_panic_hook = "0.1.7"
+
+# Nostr Stuff
+nostr-sdk = { version = "0.18", features = ["sqlite"] }
+tokio = { version = "1", features = ["full"] }
